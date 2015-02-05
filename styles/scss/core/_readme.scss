@@ -10,8 +10,15 @@ body {
 }
 
 code {
-    background-color: #414141;
+    background-color: #5a5a5a;
     color: white;
-    display: inline-block;
+    display: block;
     padding: 1em 1.5em;
+    border-left: 1em solid #24bce0;
+    &.lang-css {
+        border-color: #24bce0;
+    }
+    &.lang-html {
+        border-color: #e05724;
+    }
 }

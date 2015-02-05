@@ -2,7 +2,7 @@
 Place to begin with web projects with lots of useful bits already setup
 
 
-### Key Concept:
+### The Component Concept:
 
 Ideally you should be trying to split your styling down based on the component that it's related to, if it's not related to the styling of a component then styling should go into main.scss in styles/scss/core
 
@@ -36,20 +36,44 @@ ___
 }
 
 ```
+  
+//
 
 
 ```css
 *     /// Apply styling to all elements
 ```
-
+  
+//
+  
 
 ```css
-* + *
+* + * /// Lobotomised owl selector
 ```
-Lobotomised owl selector -- [http://alistapart.com/article/axiomatic-css-and-lobotomized-owls]
+^^ [http://alistapart.com/article/axiomatic-css-and-lobotomized-owls]
+
+//
+
+```css
+div > a 
+/// Select element right inside container
+/// so here we would be styling all anchor tags directly inside divs
+```
+Example markup:
+```html
+<div>
+    <a href="#na">Hi there</a> /// styling applied here
+    <p>
+        <a href="#na">Hello again</a> /// but not here
+    </p> 
+</div>
+```
+
+//
 
 [Inception rule](http://thesassway.com/beginner/the-inception-rule) -- don’t go nest your scss more than four levels
 
+//
 
 ```css
 body {
@@ -63,7 +87,7 @@ body {
     }
 }
 ```
-Useful method for:
+^^ Useful method for:
 - Ensuring content remains in central column
 - Keep padding either side of content
 - Constraint top width of content
@@ -71,6 +95,7 @@ Useful method for:
 
 N.B. Must be used with box-sizing: border-box;
 
+___
 
 
 ### Box-sizing: border-box;
@@ -81,7 +106,7 @@ meaning that all borders and padding only fill inside the constraints of the box
 [http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/]
 
 
-```html
+```css
 html {
   box-sizing: border-box;
 }
@@ -101,3 +126,4 @@ ___
 [http://jquery.com/] -- this starter-kit already has jquery included, as you get more comfortable with javascript you'll start to discover how useful jquery can be
 
 [http://alistapart.com/] -- interesting, useful articles on web tech
+[https://prepros.io/] -- preprossing scss, js and md files // beware of the multiple requests to buy!
