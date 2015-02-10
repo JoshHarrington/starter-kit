@@ -91,7 +91,7 @@ body {
 - Ensuring content remains in central column
 - Keep padding either side of content
 - Constraint top width of content
-- Stopping internal contain doesn't stretch past the width of it's parent
+- Stopping internal elements stretching past the width of the parent
 
 N.B. Must be used with box-sizing: border-box;
 
@@ -125,5 +125,5 @@ ___
   
 [http://jquery.com/] -- this starter-kit already has jquery included, as you get more comfortable with javascript you'll start to discover how useful jquery can be
 
-[http://alistapart.com/] -- interesting, useful articles on web tech
+[http://alistapart.com/] -- interesting, useful articles on web tech  
 [https://prepros.io/] -- preprossing scss, js and md files // beware of the multiple requests to buy!
