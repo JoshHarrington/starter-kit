@@ -1,0 +1,38 @@
+%clearfix {
+    &:before, &:after {
+        content: ".";    
+        display: block;    
+        height: 0;    
+        overflow: hidden;
+    }
+    &:after {
+        clear: both;
+    }
+    & {
+        zoom: 1;   /// IE < 8
+    }
+}
+
+%container {
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    padding: 0 2em;
+    max-width: 65em;
+    // stopped using overflow:hidden due to issues with showing extra content (navs)
+    
+    // using clearfix instead - http://yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified/
+    @extend %clearfix;
+    * {
+        max-width: 100%;
+    }
+    @include mq($until:tablet){
+        width: 96%;
+    }
+}
+
+%ulReset {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
