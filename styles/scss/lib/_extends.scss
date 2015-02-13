@@ -1,3 +1,14 @@
+// @extend is a useful little sass function that grabs code from somewhere else
+
+// using the standard .class format with extends can be dangerous!
+// it can mean that things which shouldn't share styles do
+
+// %class does not print to the compiled stylesheet! 
+
+// if we use the %class format it means that all shared styles are grouped 
+// however that group only shares the extended styles, nothing else
+
+
 %clearfix {
     &:before, &:after {
         content: ".";    
@@ -22,11 +33,16 @@
     // stopped using overflow:hidden due to issues with showing extra content (navs)
     
     // using clearfix instead - http://yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified/
+    
+    // you can extend into other extends
     @extend %clearfix;
     * {
         max-width: 100%;
     }
-    @include mq($until:tablet){
+    
+    // seems that you can do media queries inside extends 
+    // but not @extend inside media queries
+    @include mq($until:tablet){ 
         width: 96%;
     }
 }

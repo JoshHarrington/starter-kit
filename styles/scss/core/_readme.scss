@@ -1,5 +1,6 @@
 body {
-    @extend %container;
+    // see scss/lib/_extends.scss for more info on @extend
+    @extend %container; 
 }
 
 code {
