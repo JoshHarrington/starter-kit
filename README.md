@@ -1,6 +1,11 @@
 # Starter-kit
 Place to begin with web projects with lots of useful bits already setup
 
+####Credits:
+* Based on the [HTML Boilerplate project](https://html5boilerplate.com/)  
+* Using the Guardian [sass-mq project](https://github.com/guardian/sass-mq)  
+* JS Structure developed by [Grant Morrison](http://www.grantmorrison.net/) whilst working at [Reading Room](http://www.readingroom.com/)
+
 
 ### The Component Concept:
 
