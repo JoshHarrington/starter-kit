@@ -57,7 +57,7 @@
 <p>//</p>
 <p><a href="http://thesassway.com/beginner/the-inception-rule">Inception rule</a> -- don’t go nest your scss more than four levels</p>
 <p>//</p>
-<pre><code class="lang-css">body {
+<pre><code class="lang-css">%container {
     display: block;
     width: 100%;
     margin: 0 auto;
@@ -72,10 +72,10 @@
 <ul>
 <li>Ensuring content remains in central column</li>
 <li>Keep padding either side of content</li>
-<li>Constraint top width of content</li>
+<li>Constraint max width of content</li>
 <li>Stopping internal elements stretching past the width of the parent</li>
 </ul>
-<p>N.B. Must be used with box-sizing: border-box;</p>
+<p>N.B.<br>Must be used with box-sizing: border-box;<br>Use @extend to put styling on wrapper  </p>
 <hr>
 <h3 id="box-sizing-border-box-">Box-sizing: border-box;</h3>
 <p>Box-sizing issues will likely cause you a ton of headaches

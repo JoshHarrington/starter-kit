@@ -81,7 +81,7 @@ Example markup:
 //
 
 ```css
-body {
+%container {
     display: block;
     width: 100%;
     margin: 0 auto;
@@ -95,10 +95,12 @@ body {
 ^^ Useful method for:
 - Ensuring content remains in central column
 - Keep padding either side of content
-- Constraint top width of content
+- Constraint max width of content
 - Stopping internal elements stretching past the width of the parent
 
-N.B. Must be used with box-sizing: border-box;
+N.B.  
+Must be used with box-sizing: border-box;  
+Use @extend to put styling on wrapper  
 
 ___
 
